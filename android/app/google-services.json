@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "487425398643",
+    "firebase_url": "https://music-review-cd9cd.firebaseio.com",
+    "project_id": "music-review-cd9cd",
+    "storage_bucket": "music-review-cd9cd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:487425398643:android:3c0cea1c61d9fc8e979706",
+        "android_client_info": {
+          "package_name": "com.eyram.musicreview"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "487425398643-3jl88uv75fkfc5ds90duc65ist6e54jd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgV45hQmwUMWfEuogF34CFdD2BIlcLcP8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "487425398643-3jl88uv75fkfc5ds90duc65ist6e54jd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
