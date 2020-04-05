@@ -4,7 +4,6 @@ import 'package:music_review_project/HexToColor.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:music_review_project/DescriptionTextWidget.dart';
-import 'package:music_review_project/Screens/HomePage.dart';
 
 class ReviewPage extends StatefulWidget {
   final String id;

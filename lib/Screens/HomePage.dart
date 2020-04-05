@@ -1,5 +1,4 @@
 import 'dart:ui';
-import 'package:music_review_project/DescriptionTextWidget.dart';
 import 'package:music_review_project/Screens/ReviewPage.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
