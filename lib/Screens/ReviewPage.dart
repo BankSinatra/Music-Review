@@ -123,7 +123,7 @@ class _ReviewPageState extends State<ReviewPage> {
                           width: 348,
                           color: hexToColor(userDocument['Palette'][1]),
                           child:
-                              Center(child: Text("Best Track: '${userDocument['Worst Track']}'",
+                              Center(child: Text("Worst Track: '${userDocument['Worst Track']}'",
                               textAlign: TextAlign.center, 
                               style: GoogleFonts.roboto(
                                 fontWeight: FontWeight.w600,
