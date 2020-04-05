@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'HomePage.dart';
+import 'Screens/HomePage.dart';
 
 void main() => runApp(MyApp());
 
@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Music Review',
         home: HomePage(),
-        debugShowCheckedModeBanner: true,
+        debugShowCheckedModeBanner: false,
       );
       
   }
