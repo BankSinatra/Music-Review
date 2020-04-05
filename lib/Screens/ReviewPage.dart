@@ -90,7 +90,7 @@ class _ReviewPageState extends State<ReviewPage> {
                       Container(
                         width: 348,
                         color: hexToColor(userDocument['Palette'][1]),
-                        child: DescriptionTextWidget(text: userDocument['Review Text'], id: palette),
+                        //child: DescriptionTextWidget(text: userDocument['Review Text'], id: palette),
                       ),
                     ],
                   ),
