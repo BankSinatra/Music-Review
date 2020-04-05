@@ -3,7 +3,6 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:music_review_project/HexToColor.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:music_review_project/DescriptionTextWidget.dart';
 
 class ReviewPage extends StatefulWidget {
   final String id;
@@ -24,7 +23,6 @@ class _ReviewPageState extends State<ReviewPage> {
             return new Text("Loading");
           }
           var userDocument = snapshot.data;
-          var palette = userDocument['Palette'];
           return new Scaffold(
               backgroundColor: hexToColor(userDocument['Palette'][0]),
               appBar: AppBar(
