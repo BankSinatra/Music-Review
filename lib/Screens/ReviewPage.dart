@@ -33,11 +33,12 @@ class _ReviewPageState extends State<ReviewPage> {
                 leading: Builder(
                   builder: (BuildContext context) {
                     return IconButton(
-                      icon: const Icon(Icons.arrow_back_ios),
-                      onPressed: () {Navigator.pop(context);}
-                      );
-                      },
-                      ),
+                        icon: const Icon(Icons.arrow_back_ios),
+                        onPressed: () {
+                          Navigator.pop(context);
+                        });
+                  },
+                ),
                 title: Text(userDocument['Format']),
                 actions: <Widget>[
                   Padding(
@@ -87,11 +88,50 @@ class _ReviewPageState extends State<ReviewPage> {
                                 textStyle: TextStyle(color: Colors.white),
                                 fontSize: 36),
                           )),
+                      SizedBox(height: 10,),
+                      //Review text
                       Container(
                         width: 348,
                         color: hexToColor(userDocument['Palette'][1]),
-                        child: DescriptionTextWidget(text: userDocument['Review Text'], id: palette),
+                        child: DescriptionTextWidget(
+                            text: userDocument['Review Text'], id: palette),
                       ),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(30),
+                        child: Container(
+                          //Best Track
+                          width: 348,
+                          color: hexToColor(userDocument['Palette'][1]),
+                          child:
+                              Center(child: Text("Best Track: '${userDocument['Best Track']}'",
+                              textAlign: TextAlign.center, 
+                              style: GoogleFonts.roboto(
+                                fontWeight: FontWeight.w600,
+                                textStyle: TextStyle(color: Colors.white),
+                                fontSize: 24
+                              ),)),
+                        ),
+                      ),
+                      SizedBox(height: 15),
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(30),
+                        child: Container(
+                          //Worst Track
+                          width: 348,
+                          color: hexToColor(userDocument['Palette'][1]),
+                          child:
+                              Center(child: Text("Best Track: '${userDocument['Worst Track']}'",
+                              textAlign: TextAlign.center, 
+                              style: GoogleFonts.roboto(
+                                fontWeight: FontWeight.w600,
+                                textStyle: TextStyle(color: Colors.white),
+                                fontSize: 24
+                              ),)),
+                        ),
+                      )
                     ],
                   ),
                 ),
